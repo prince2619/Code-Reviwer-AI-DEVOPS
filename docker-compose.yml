@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  backend:
+    build: ./BackEnd
+    ports:
+      - "5000:5000"
+    environment:
+      - GEMINI_API_KEY=AIzaSyDDb6s298gQEL4-N5uiAN0xzFhWoCxiuQU
+
+  frontend:
+    build: ./FrontEnd
+    ports:
+      - "3000:80"
